@@ -11,7 +11,7 @@ import java.util.List;
 @FeignClient(name="api-movie")
 public interface MovieServiceClient {
 
-	@GetMapping("/{genre}")
+	@GetMapping("/api/v1/movies/{genre}")
 	List<MovieDto> getMovieByGenre(@PathVariable (value = "genre") String genre);
 
 
