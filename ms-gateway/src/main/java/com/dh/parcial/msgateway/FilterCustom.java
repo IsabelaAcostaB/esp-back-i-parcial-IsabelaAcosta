@@ -8,6 +8,7 @@ import reactor.core.publisher.Mono;
 import java.util.Calendar;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@Component
 public class FilterCustom extends AbstractGatewayFilterFactory<FilterCustom.Config> {
     private static AtomicInteger COUNT_CALL_GATEWAY = new AtomicInteger(0);
     public FilterCustom() {
