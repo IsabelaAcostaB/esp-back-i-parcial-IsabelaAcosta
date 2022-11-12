@@ -5,10 +5,6 @@ spring:
   application:
     name: api-catalog
 
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
 eureka:
   client:
     registerWithEureka: true
